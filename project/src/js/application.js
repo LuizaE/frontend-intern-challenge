@@ -18,9 +18,13 @@ $(document).ready(function() {
         });
     });
     $("#shortthat").click(function() {
-        $('#shortthat').text('COPIAR');
-        $('.close-icon').css({'display':'block'});
-        $("#link").val("http://crd.dc/"+makeid()).addClass("linkshort"); 
+        if($("#link").val().lenght === 0) {
+            window.alert("Informe seu link!");
+        } else{
+            $('#shortthat').text('COPIAR');
+            $('.close-icon').css({'display':'inline-block'});
+            $("#link").val("http://crd.dc/"+makeid()).addClass("linkshort"); 
+        }
     });
     $(".close-icon").click(function() {
         $('#link').val('').removeClass("linkshort");
