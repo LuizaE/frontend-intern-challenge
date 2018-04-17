@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     
@@ -10,39 +14,40 @@ body {
 #header {
     background-color: #ffffff;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
     a {
         text-decoration: none;
-    }
+    } 
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 480px;
+    width: 100%;
 }
 
 #content {
     background-image: url('../img/background-home.jpg');
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 120px 0;
+    background-size: 100% auto;
+    padding: 12% 0;
     text-align: center;
     h1 {
         font-family: 'Roboto Slab', serif;
         font-weight: bold;
-        padding-top: 40px;
+        padding-top: 4%px;
         color: #ffffff;
-        font-size: 36px;
+        font-size: 2.25rem;
         }
     p {
-        padding-top: 10px;
+        padding-top: 1%;
         color: #ffffff;
-        font-size: 16px;
+        font-size: 1rem;
         }
     .form {
-        padding: 50px 0;
+        padding: 5% 0;
     }
     input {
         border: none;
@@ -51,9 +56,9 @@ body {
         float: left;
         width: 74%;
         color: #ff6e14;
-        font-size: 15px;
+        font-size: 0.9rem;
         font-weight: bold;
-        line-height: 35px;
+        line-height: 2.25rem;
         &:focus {
             outline: none;
         }
@@ -87,19 +92,19 @@ body {
         &:after {
         	content: "X";
         	display: block;
-        	width: 15px;
-        	height: 15px;
+        	width: 1.5%;
+        	height: 1.5%;
         	position: absolute;
         	z-index:1;
-        	right: 1px;
+        	right: 0.1px;
         	top: 36px;
         	bottom: 0;
         	margin: auto;
-        	padding: 2px;
+        	padding: 0.2%;
         	text-align: center;
         	color: #ffffff;
         	font-weight: normal;
-        	font-size: 12px;
+        	font-size: 0.75rem;
         	cursor: pointer;
         }
     }
@@ -113,37 +118,37 @@ body {
     background-color: #ff6e14;
     border: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.87rem;
     height: 35px;
     cursor: pointer;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 2.25rem;
 }
 
 .title {
-    margin: 30px;
+    margin: 3%;
     text-transform: uppercase;
     color: #AA1423;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    padding-top: 15px;
+    padding-top: 1.5%;
     font-weight: normal;
 }
 
 #table {
     width: 100%;
-    line-height: 40px;
+    line-height: 2.5rem;
     border-spacing: 0;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     tr {
         .url {
             a, a:link, a:visited, a:hover, a:active {
                 text-decoration: none;
                 color: #AA1423;
-                font-size: 15px;
+                font-size: 0.9rem;
             }
         }
         .hits {
@@ -167,24 +172,24 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     h1 {
-        margin-top: 20px;
-        padding-top: 50px;
+        margin-top: 2%;
+        padding-top: 5%;
     }
     p {
         text-align: center;
         color: #777;
-        font-size: 15px;
-        padding-top: 5px;
-        padding-bottom: 35px;
+        font-size: 0.9rem;
+        padding-top: 0.5%;
+        padding-bottom: 3.5%;
     }
 }
 #counter {
     color: #AA1423;
-    font-size: 30px;
+    font-size: 1.8rem;
     font-family: 'Roboto Slab', serif;
     margin: 0 auto;
-    margin-top: 20px;
-    padding: 4px;
+    margin-top: 2%;
+    padding: 0.4%;
     width: 30%;
     border: 1px solid #d2d2d2;
     border-radius: 5px;
@@ -195,7 +200,7 @@ body {
 .wrapper-footer {
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 2%;
 }
 #footer-left {
     float: left;
@@ -203,7 +208,7 @@ body {
     width: 70%;
     a {
         color: #AA1423;
-        font-size: 18px;
+        font-size: 1.12rem;
     }
 }
 
@@ -214,7 +219,7 @@ body {
     text-align: right;
     a {
         &:first-child {
-            padding-right: 20px;
+            padding-right: 2%;
         }
     }
 }
