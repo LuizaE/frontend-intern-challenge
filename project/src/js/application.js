@@ -17,13 +17,26 @@ $(document).ready(function() {
             $('#table tbody').append('<tr><td class="url"><a href="'+record.shortUrl+'">'+record.shortUrl+'</a></td><td class="hits">'+record.hits+'</td></tr>');    
         });
     });
+    
     $("#shortthat").click(function() {
-        if($("#link").val().lenght === 0) {
-            window.alert("Informe seu link!");
-        } else{
-            $('#shortthat').text('COPIAR');
-            $('.close-icon').css({'display':'inline-block'});
-            $("#link").val("http://crd.dc/"+makeid()).addClass("linkshort"); 
+        
+        if($("#shortthat").html() == "COPIAR") {
+            var the_url = document.getElementById("link");
+            the_url.select();
+            document.execCommand("Copy");
+            $('#shortthat').text('COPIADO!');
+        
+            
+        } else if ($("#shortthat").html() != "COPIADO!") {
+            
+            if($("#link").val().length === 0) {
+                window.alert("Informe seu link!");
+                $('#link').focus();
+            } else{
+                $('#shortthat').text('COPIAR');
+                $('.close-icon').css({'display':'inline-block'});
+                $("#link").val("http://crd.dc/"+makeid()).addClass("linkshort");
+            }
         }
     });
     $(".close-icon").click(function() {
