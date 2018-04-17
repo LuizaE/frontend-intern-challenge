@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+#header {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+#content {
+    background-image: url('../img/background-home.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 120px 0;
+    text-align: center;
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        padding-top: 40px;
+        color: #ffffff;
+        font-size: 36px;
+        }
+    p {
+        padding-top: 10px;
+        color: #ffffff;
+        font-size: 16px;
+        }
+    .form {
+        padding: 50px 0;
+    }
+    input {
+        border: none;
+        border-bottom: 2px solid #ff6e14;
+        background: none;
+        float: left;
+        width: 74%;
+        color: #ff6e14;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 35px;
+        &:focus {
+            outline: none;
+        }
+        &:placeholder-shown {
+            color: #ff6e14;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #ff6e14;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: #ff6e14;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: #ff6e14;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: #ff6e14;
+        }
+    }
+    .linkshort {
+        color: #ffffff;
+    }
+    .close-icon {
+        border: none;
+    	background-color: transparent;
+    	display: none;
+    	vertical-align: middle;
+        outline: 0;
+        cursor: pointer;
+        position: relative;
+        &:after {
+        	content: "X";
+        	display: block;
+        	width: 15px;
+        	height: 15px;
+        	position: absolute;
+        	z-index:1;
+        	right: 1px;
+        	top: 36px;
+        	bottom: 0;
+        	margin: auto;
+        	padding: 2px;
+        	text-align: center;
+        	color: #ffffff;
+        	font-weight: normal;
+        	font-size: 12px;
+        	cursor: pointer;
+        }
+    }
+}
+
+#shortthat {
+    float: right;
+    background: none;
+    width: 24%;
+    color: #ffffff;
+    background-color: #ff6e14;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.title {
+    margin: 30px;
+    text-transform: uppercase;
+    color: #AA1423;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 15px;
+    font-weight: normal;
+}
+
+#table {
+    width: 100%;
+    line-height: 40px;
+    border-spacing: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    tr {
+        .url {
+            a, a:link, a:visited, a:hover, a:active {
+                text-decoration: none;
+                color: #AA1423;
+                font-size: 15px;
+            }
+        }
+        .hits {
+            text-align: right;
+            color: #777;
+        }
+        td {
+            border-bottom: 1px solid #d2d2d2;
+        }
+        &:last-child {
+            td {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+#hits {
+    background-image: url('../img/background-hits.png');
+    background-color: #EEE;
+    background-position: top center;
+    background-repeat: no-repeat;
+    h1 {
+        margin-top: 20px;
+        padding-top: 50px;
+    }
+    p {
+        text-align: center;
+        color: #777;
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 35px;
+    }
+}
+#counter {
+    color: #AA1423;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 4px;
+    width: 30%;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.wrapper-footer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#footer-left {
+    float: left;
+    display: block;
+    width: 70%;
+    a {
+        color: #AA1423;
+        font-size: 18px;
+    }
+}
+
+#footer-right {
+    float: right;
+    display: block;
+    width: 30%;
+    text-align: right;
+    a {
+        &:first-child {
+            padding-right: 20px;
+        }
+    }
+}
